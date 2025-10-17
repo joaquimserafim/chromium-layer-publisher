@@ -1,0 +1,18 @@
+# Always use LF line endings for shell scripts
+*.sh text eol=lf
+
+# Treat shell scripts as bash for GitHub highlighting
+*.sh linguist-language=Shell
+
+# Ensure executable scripts retain mode in diffs
+*.sh -diff
+
+# Normalize text files
+*.md text
+*.yml text
+*.yaml text
+*.gitignore text
+*.gitattributes text
+
+# Ignore binary diffs (e.g., .zip)
+*.zip binary
