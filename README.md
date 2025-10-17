@@ -1,10 +1,10 @@
 # 🪣 chromium-layer-publisher
 
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/joaquimserafim/chromium-layer-publisher)
+[![Create Release](https://github.com/joaquimserafim/chromium-layer-publisher/actions/workflows/release.yml/badge.svg)](https://github.com/joaquimserafim/chromium-layer-publisher/actions/workflows/release.yml)
+[![Lint Shell Scripts](https://github.com/joaquimserafim/chromium-layer-publisher/actions/workflows/lint.yml/badge.svg)](https://github.com/joaquimserafim/chromium-layer-publisher/actions/workflows/lint.yml)
 ![Shell Script](https://img.shields.io/badge/bash-5.1+-blue?logo=gnu-bash)
 ![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-orange?logo=awslambda)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-[![Lint Shell Scripts](https://github.com/joaquimserafim/chromium-layer-publisher/actions/workflows/lint.yml/badge.svg)](https://github.com/joaquimserafim/chromium-layer-publisher/actions/workflows/lint.yml)
 
 Automate the process of publishing [Sparticuz Chromium](https://github.com/Sparticuz/chromium)
 as an AWS Lambda Layer — fully scripted, robust, and production-ready.
