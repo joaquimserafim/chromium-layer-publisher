@@ -1,10 +1,13 @@
 # 🪣 chromium-layer-publisher
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/joaquimserafim/chromium-layer-publisher)
 ![Shell Script](https://img.shields.io/badge/bash-5.1+-blue?logo=gnu-bash)
 ![AWS Lambda](https://img.shields.io/badge/AWS-Lambda-orange?logo=awslambda)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+![CI](https://github.com/yourusername/chromium-layer-publisher/actions/workflows/lint.yml/badge.svg)
 
-Automate the process of publishing [Sparticuz Chromium](https://github.com/Sparticuz/chromium) as an AWS Lambda Layer — fully scripted, robust, and production-ready.
+Automate the process of publishing [Sparticuz Chromium](https://github.com/Sparticuz/chromium)
+as an AWS Lambda Layer — fully scripted, robust, and production-ready.
 
 ---
 
@@ -41,4 +44,23 @@ This tool:
 
 ```bash
 ./publish-chromium-layer.sh [ARCH] [VERSION] [AWS_REGION] [--keep-bucket|--cleanup] [--bucket NAME] [--profile NAME]
+```
+
+## 🧠 Examples
+
+```bash
+# Default run: creates random bucket and cleans up after
+./publish-chromium-layer.sh
+
+# Specify architecture and region
+./publish-chromium-layer.sh arm64 v141.0.0 eu-west-1
+
+# Keep the random bucket after publishing
+./publish-chromium-layer.sh x64 v141.0.0 --keep-bucket
+
+# Use a specific AWS CLI profile
+./publish-chromium-layer.sh arm64 --profile dev --cleanup
+
+# Publish to an existing bucket
+./publish-chromium-layer.sh --bucket my-chromium-layers --cleanup
 ```
