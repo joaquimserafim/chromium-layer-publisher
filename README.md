@@ -63,4 +63,14 @@ This tool:
 
 # Publish to an existing bucket
 ./publish-chromium-layer.sh --bucket my-chromium-layers --cleanup
+
+```
+
+## 🧩 Run Without Installation
+
+You can run **chromium-layer-publisher** instantly — no clone or setup required.  
+Just execute the script directly from GitHub:
+
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/joaquimserafim/chromium-layer-publisher/v1.0.0/publish-chromium-layer.sh) x64 v141.0.0 us-east-1 --cleanup
 ```
